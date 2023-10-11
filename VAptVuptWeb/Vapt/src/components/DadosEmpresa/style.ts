@@ -30,8 +30,7 @@ export const Container = styled.div`
   }
 
   .container1 {
-    width: 60%;
-    background: #ff3131;
+    width: 80%;
     box-shadow: 1px 2px 3px #ccc;
     height: 100vh;
   }
@@ -40,6 +39,16 @@ export const Container = styled.div`
       display: none;
     }
   }
+  
+  .container2 {
+    width: 20%;
+    background: #ff3131;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    height: 100vh;
+    height: 100%;
+  }
   .image {
     margin: auto;
     align-items: center;
@@ -47,15 +56,7 @@ export const Container = styled.div`
     display: flex;
     width: 100%;
     height: 100%;
-    animation: ${moveToRight} 0.5s;
-  }
-  .container2 {
-    width: 40%;
-    display: flex;
-    align-items: center;
-    margin: auto;
-    height: 100vh;
-    height: 100%;
+    animation: ${moveToRight} 0.5s reverse;
   }
   @media (max-width: 999px) {
     .container2 {
@@ -125,12 +126,11 @@ export const Form = styled.div`
       width: 80%;
     }
     .buttom {
-      background: #00439b;
+      background: #FF4500;
     }
     .checkbox p {
-      color: blue;
+      color: #fff;
     }
-  }
   .buttonStyles = {
     textDecoration: "none", // Remova a sublinhado do link
     color: "inherit", // Use a cor de texto padrão do botão
@@ -139,6 +139,7 @@ export const Form = styled.div`
     cursor: "pointer", // Mude o cursor para indicar que é clicável
     padding: "8px 16px", // Adicione preenchimento ao botão
   };  
+  }
   .buttom {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
@@ -173,7 +174,6 @@ export const Form = styled.div`
       }
     }
   }
-
 `;
 
 export const Logo = styled.div`
